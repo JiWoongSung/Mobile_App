@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiwoong.homework3.Main2Activity">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/t1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layout"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:layout_width="331dp"
+                        android:layout_height="364dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="45dp"
+                        android:layout_weight="0.25">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="키와 몸무게를 입력하세요" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="키(cm)"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fdb5b5"
+                                android:ems="10"
+                                android:hint="키를 입력하세요."
+                                android:inputType="textPersonName"
+                                android:padding="15dp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="체중(kg)"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fdb5b5"
+                                android:ems="10"
+                                android:hint="체중을 입력하세요."
+                                android:inputType="textPersonName"
+                                android:padding="15dp" />
+
+                            <Button
+                                android:id="@+id/button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#743636"
+                                android:padding="15dp"
+                                android:text="BMI 계산 결과"
+                                android:textColor="#ffff"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="결과가 없습니다"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layout2"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="45dp"
+                        android:layout_weight="0.25">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="평이나 면적을 입력하세요"
+                                android:textSize="20dp" />
+
+                            <EditText
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fdb5b5"
+                                android:ems="10"
+                                android:hint="숫자를 입력하세요"
+                                android:inputType="textPersonName"
+                                android:padding="15dp" />
+
+                            <TextView
+                                android:id="@+id/t2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/abc"
+                                android:gravity="center"
+                                android:text="결과는?"
+
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:text="평을 제곱미터로 변환"
+                                android:textColor="#ffff"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/b2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_green_dark"
+                                android:padding="15dp"
+                                android:text="제곱미터를 평으로 변환"
+                                android:textColor="#ffff"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

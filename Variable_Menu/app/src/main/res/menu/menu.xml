@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="배경색 변경"
+        tools:icon="@mipmap/ic_launcher_round">
+        <menu>
+            <item
+                android:id="@+id/red"
+                android:icon="@mipmap/ic_launcher"
+                android:title="빨간색" />
+            <item
+                android:id="@+id/blue"
+                android:icon="@mipmap/ic_launcher"
+                android:title="파란색" />
+            <item
+                android:id="@+id/yellow"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="노란색" />
+        </menu>
+    </item>
+
+
+    <item android:title="그림 30도 회전" android:id="@+id/menu1" />
+
+
+    <item android:title="제목 보이기" android:id="@+id/menu2"
+        android:checkable="true"/>
+
+    <item android:title="그림 2배 확대" android:id="@+id/menu3"
+        android:checkable="true" />
+
+    <group android:checkableBehavior="single">
+        <item android:title="치킨선택" android:id="@+id/menu4"/>
+
+
+        <item android:title="스파게티" android:id="@+id/menu5"/>
+
+
+    </group>
+
+
+
+
+</menu>
